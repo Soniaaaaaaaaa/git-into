@@ -1,0 +1,42 @@
+sonia@sonia-NH50-70RA:~$ mkdir cursor_git_hw
+sonia@sonia-NH50-70RA:~$ cd cursor_git_hw
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git init
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ touch first.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git status
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git add first.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git status
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit -m 'adding first.txt file'
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ touch second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git add second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit -m 'adding second.txt'
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ rm first.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git add first.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit 'removing first.txt'
+error: pathspec 'removing first.txt' did not match any file(s) known to git
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit -m 'removing first.txt'
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git log
+git push --set-upstream git@github.com:Soniaaaaaaaaa/git-into.git master
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git branch first
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git checkout -b second
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ subl second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ cat second.txt
+hello
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git stash
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git checkout first
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git checkout second
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git stash pop
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git add second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit -m 'changing second.txt'
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git push --set-upstream git@github.com:Soniaaaaaaaaa/git-into.git second
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git checkout first
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ subl second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ cat second.txt
+cursor
+sonia@sonia-NH50-70RA:~/cursor_git_hw$  git add second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit -m 'changing second'
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git push --set-upstream git@github.com:Soniaaaaaaaaa/git-into.git first
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git checkout master
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git add second.txt
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git commit -m 'resolving second.txt'
+sonia@sonia-NH50-70RA:~/cursor_git_hw$ git push
+
